@@ -13,7 +13,7 @@ const Products = () => {
             {subtitle}
           </p>
         </div>
-        <div className="min-h-[1300px] container">
+        <div className="container">
           {pages.map((page, index) => {
             return (
               <div key={index}>

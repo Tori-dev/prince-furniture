@@ -4,16 +4,16 @@ import Csone from "./Csone";
 import Cstwo from "./Cstwo";
 
 const Categories = () => {
-  const { title, subtitle, cimg, ctext, bimg } = categories;
+  const { title, cimg, ctext, ctitle, bimg, btitle, btext, dimg, dtitle, dtext, ktext, ktitle, kimg } = categories;
   return (
     <section className="section">
       <div className="text-center">
         <h2 className="title capitalize">{title}</h2>
-        <p className="subtitle">{subtitle}</p>
       </div>
-      <Csone head={title} texts={ctext} image={cimg} />
-      <Cstwo head={title} texts={ctext} image={cimg} />
-      <Csone head={title} texts={ctext} image={cimg} />
+      <Csone head={ctitle} texts={ctext} image={cimg} />
+      <Cstwo head={btitle} texts={btext} image={bimg} />
+      <Csone head={dtitle} texts={dtext} image={dimg} />
+      <Cstwo head={ktitle} texts={ktext} image={kimg} />
     </section>
   );
 };
