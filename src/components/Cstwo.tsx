@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Cstwo = ({image, head, texts}) => {
+const Cstwo = ({image, head, texts} : any) => {
   return (
     <section className="section">
       <div className="container mx-auto">
